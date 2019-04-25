@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bloodbank.authenticate.LoginActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkblue"
+            android:orientation="vertical"
+            android:padding="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Blood Donor"
+                android:textColor="#fff"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="We provide a platform where you can see the vitals of your hospital's blood demand on the go."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/learn_more_button"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextstyle"
+                    android:text="Learn more"
+                    android:textColor="#fff" />
+                <Button
+                    android:id="@+id/email_sign_up_button"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextstyle2"
+                    android:text="Sign Up"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"
+                android:drawablePadding="10dp"
+                android:maxLines="1"
+                android:hint="Username"
+                />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_password_black_24dp"
+                android:layout_width="320dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                />
+            <Button
+                android:id="@+id/input_sign_in_button"
+                android:drawableRight="@drawable/ic_login_key_black_24dp"
+                android:textColor="#fff"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/edittextstyle"
+                android:layout_marginTop="40dp"
+                android:text="Log in"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        
+</ScrollView>
